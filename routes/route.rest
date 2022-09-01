@@ -1,0 +1,32 @@
+POST http://localhost:5000/test/
+Content-Type: application/json
+
+{
+    "name":"manoj",
+    "subscribed":"yes"
+}
+
+###
+GET http://localhost:5000/test/
+
+###
+GET http://localhost:5000/test/6310b1e74f5b5af7fffbdb09
+
+###
+DELETE  http://localhost:5000/test/6310ac30327bcd9648f30253
+
+###
+PATCH http://localhost:5000/test/6310b1e74f5b5af7fffbdb09
+Content-Type: application/json
+
+{
+    "name":"NewName1"
+}
+
+###
+PUT  http://localhost:5000/test/6310aa36bc756b4156f4168e
+Content-Type: application/json
+
+{
+    "name":"NewName2"
+}
